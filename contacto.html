@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="stayles.css">
+    
+</head>
+
+<body>
+
+    <a id="whasapp" target="_blank" href="https://api.whatsapp.com/send?phone=2923653915">
+        <img src="img/whasapp.png" alt="">
+    </a> 
+
+    </a>
+
+    <div id="cabecera" class="container">
+        <img src="img/resto.jpg" alt="" class="logo">
+
+        
+        <div class="menu">
+            <h2>Don Daniel</h2>
+            <a href="index.html">Inicio</a>
+            <a href="comidas.html">Comidas</a>
+            <a href="carro.html">Carro</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="galeria.html">Galeria</a>
+            
+
+        </div>
+
+    </div>
+
+<div class="container column-center">
+         <h3>Envie su formulario</h3>
+        <form class="contacto" action="https://formsubmit.co/4f0ef4da5f4924c7fb407c950851fd42" method="POST">
+            <div class="form-field">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class="form-field">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email">
+            </div>
+
+
+            <div class="form-field">
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject">
+            </div>
+
+            <div class="form-field">
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" cols="15" rows="5"></textarea>
+            </div>
+
+            <input class="contacto-btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
