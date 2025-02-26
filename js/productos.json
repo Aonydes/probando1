@@ -7,7 +7,7 @@
     },
     {
       "id": 2,
-      "imagen": "🍎",
+      "imagen": "../img/foto2.jpeg",
       "nombre": "Manzanas",
       "precio": 200
     },
