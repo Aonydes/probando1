@@ -1,98 +1,59 @@
 [
     {
       "id": 1,
-      "imagen": "../img/foto1.jpeg" ,
-      "nombre": "Bananas",
+      "imagen": "../img/foto8.jpeg" ,
+      "nombre": "Bife de Chorizo",
       "precio": 220
     },
     {
       "id": 2,
-      "imagen": "🍎",
-      "nombre": "Manzanas",
+      "imagen": "../img/foto1.jpeg",
+      "nombre": "Papas Fritas",
       "precio": 200
     },
     {
       "id": 3,
-      "imagen": "🥝",
-      "nombre": "Kiwis",
+      "imagen": "../img/foto10.jpeg",
+      "nombre": "Tortilla",
       "precio": 280
     },
     {
       "id": 4,
-      "imagen": "🍈",
-      "nombre": "Melón",
+      "imagen": "../img/foto4.jpeg",
+      "nombre": "Milanesa Napolitana",
       "precio": 350
     },
     {
       "id": 5,
-      "imagen": "🍍",
-      "nombre": "Piñas",
+      "imagen": "../img/foto1.jpeg",
+      "nombre": "Milanesa Simple",
       "precio": 320
     },
     {
       "id": 6,
-      "imagen": "🍅",
-      "nombre": "Tomates",
+      "imagen": "../img/foto6.jpeg",
+      "nombre": "Milanesa a Caballo",
       "precio": 140
     },
     {
       "id": 7,
-      "imagen": "🥥",
+      "imagen": "../img/foto5.jpeg",
       "nombre": "Cocos",
       "precio": 270
     },
+
     {
       "id": 8,
-      "imagen": "🍉",
-      "nombre": "Sandias",
-      "precio": 200
+      "imagen": "../img/foto10.jpeg",
+      "nombre": "Cocos",
+      "precio": 270
     },
+
     {
       "id": 9,
-      "imagen": "🍑",
-      "nombre": "Duraznos",
-      "precio": 310
-    },
-    {
-      "id": 10,
-      "imagen": "🫐",
-      "nombre": "Arandanos",
-      "precio": 650
-    },
-    {
-      "id": 11,
-      "imagen": "🥭",
-      "nombre": "Mango",
-      "precio": 290
-    },
-    {
-      "id": 12,
-      "imagen": "🍇",
-      "nombre": "Uvas",
-      "precio": 700
-    },
-    {
-      "id": 13,
-      "imagen": "🍐",
-      "nombre": "Peras",
-      "precio": 320
-    },
-    {
-      "id": 14,
-      "imagen": "🍒",
-      "nombre": "Cerezas",
-      "precio": 1100
-    },
-    {
-      "id": 15,
-      "imagen": "🍓",
-      "nombre": "Frutillas",
-      "precio": 600
-    },
-    {
-      "id": 16,
-      "imagen": "🍋",
-      "nombre": "Limones",
-      "precio": 260
+      "imagen": "../img/foto3.jpeg",
+      "nombre": "Asado de Tira",
+      "precio": 270
     }
+    
   ]

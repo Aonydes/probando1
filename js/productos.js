@@ -1,7 +1,7 @@
 const productos = [
     {
         id: 1,
-        imagen: "hola", // Ruta de la imagen
+        imagen: "🍌", // Ruta de la imagen
         nombre: "Bananas",
         precio: 220
     },

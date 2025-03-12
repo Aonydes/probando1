@@ -112,8 +112,8 @@ h2{
 } 
 
 img{
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 260px;
     
 }
 
@@ -161,231 +161,200 @@ pre{
     bottom: 0;
 }
 
-/* comidas */
+/*Carpeta comidas */
 
-.plato{
-    gap: 30px;
+
+/* Estilos para el contenedor de plato */
+.plato-container {
     display: flex;
-    flex-direction:row;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin-top: 20rem;
 }
 
-.morfi{
-    box-shadow: 5px 20px 20px rgba(211, 211, 211, 0.3);
-    border: 1px solid rgba(215, 28, 28, 0.384);
+
+/* Estilos para el contenedor de plato (envoltorio de todas las imágenes) */
+.plato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas */
+    gap: 30px; /* Espacio entre las columnas y filas */
+    width: 80%; /* Ancho del contenedor, ajustable */
+    max-width:  1000px; /* Máximo ancho */
+    text-align: center;
+}
+
+/* Estilos para cada sección de la comida */
+.morfi {
+    background-color: #fff;
+    box-shadow: 10px -9px 6px 8px rgba(135, 49, 89, 0.2);
     border-radius: 8px;
-    height: 230px;
-    width: 180px;
-}
-
-.morfi .morfi-name{
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    display: block;
-    width: 1fr;
-}
-
-.morfi .morfi-image{
-    text-align: center;
-    font-size: 60px;
-    display: block;
-    width: 1fr;
-}
-
-.morfi .morfi-price{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    display: block;
-    width: 1fr;
-}
-
-.morfi .morfi-button{
-    text-align: center;
-    display: block;
-}
-
-.button-add {
-    border-radius: 10px;
-    outline: 1px solid rgb(169, 0, 8) !important;
-}
-
-.morfi:hover {
-    transition: .5s ease-in;
-    box-shadow: 5px 20px 60px rgba(211, 211, 211, 0.519);
-}
-
-.morfi .morfi-button button {
-    margin-top: 10px;
-    font-size: 20px !important;
-}
-
-.morfi .morfi-button .disabled {
-    background-color: rgb(211, 211, 211) !important;
-    color: rgb(194, 24, 24) !important;
-}
-
-.morfi .morfi-button button:active {
-    background: rgb(9, 0, 139) !important;
-    color: rgb(229, 33, 33) !important;
-}
-
-.sin-stock {
-    filter: grayscale(100%) opacity(40%); 
-}
-
-/*galeria*/
-
-.men_content{
-    position: relative;
+    padding: px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(211 211 211);
-    border-radius: .5rem;
-    box-shadow: 0px 0px 4px 10px rgba(235, 5, 220, 0.15);
-    padding: .75rem;
+    align-items: center;
+    gap: 20px;
 }
 
-
-.men_img{
-    width: 200px;
-    align-self: center;
-    margin-bottom: 1rem;
-} 
-
-.men_name, .men_preci{
-    font-weight: 600;
-    color: #8d6b10;
+/* Estilo para la imagen del morfi */
+.morfi-image {
+    font-size: 10px;
+    padding: 10px;
 }
 
-.men_name {
-    font-size: .938rem;
+/* Estilo para el nombre del morfi */
+.morfi-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
 }
 
-.men_detail, .men_preci {
-    font-size: .813rem;
+/* Estilo para el precio */
+.morfi-price {
+    font-size: 1.2em;
+    color: #ff5722;
 }
 
-.men_detail {
-    margin-bottom: .5rem;
+/* Estilo para el botón */
+.morfi-button .button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    /*margin-top: -20px; / Ajusta este valor para mover el botón hacia arriba -- no funciona*/
 }
 
-.men_preci{
-    padding-bottom: 30px;
+/* Estilo cuando el botón es hover */
+.morfi-button .button:hover {
+    background-color: #45a049;
 }
 
-.men_button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    padding: 10px 97px;
+/* Estilo para el botón con borde */
+.morfi-button .button-outline {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
 }
 
-.men_container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-}
-
-.tk-container {
-    max-width: 960px;
-    width: calc(100% - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.tk-grid {
-    display: grid;
-    gap: 1.5rem;
+/* Estilo cuando el botón con borde es hover */
+.morfi-button .button-outline:hover {
+    background-color: #4caf50;
+    color: #fff;
 }
 
 .button {
     display: inline-block;
-    background-color: #fbaf32;
-    color: #fff;
+    background-color: #32cffb;
+    color: #e66d0b;
     padding: .75rem 1rem;
     border-radius: .5rem;
     transition: .3s;
 }
 
+/*De aca hasta bajo la carpeta carro*/
 
-@media screen and (min-width:960px) {
-    .tk-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .about_container,
-    .app_container {
-        column-gap: 1000rem;
-    }
+/* "boton" seguir comprando                                                           A*/          
+
+/* Estilo para el botón "Seguir comprando" */
+.seguir-comprando-button {
+    background-color: #4CAF50; /* Verde de fondo */
+    border: 2px solid #388E3C; /* Un borde ligeramente más oscuro */
+    color: white; /* Color del texto */
+    padding: 12px 20px; /* Espaciado dentro del botón */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición para suavizar el cambio de colores */
 }
 
-@media screen and (min-width:768px) {
-    
-    .section {
-        padding-top: 8rem;
-    }
-    .men_container {
-        margin-top: 3rem;
-    }
-    .men_container {
-        grid-template-columns: repeat(3, 200px);
-        column-gap: 4rem;
-    }
-    .men_content {
-        padding: 1.5rem;
-    }
-    .men_img{
-        width: 200px;
-    }
-    
-
+/* Estilo para el enlace dentro del botón */
+.seguir-comprando-button a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Hacer el texto en negrita */
 }
 
-/* carro*/
+/* Efecto hover para el botón */
+.seguir-comprando-button:hover {
+    background-color: #388E3C; /* Cambiar el fondo a un verde más oscuro */
+    border-color: #2C6E2F; /* Cambiar el borde a un color aún más oscuro */
+    transform: translateY(-3px); /* Mover el botón ligeramente hacia arriba */
+}
 
-.centrar-div {
+/* Efecto cuando el botón es presionado (active)                                    A*/
+.seguir-comprando-button:active {
+    background-color: #2C6E2F; /* Fondo más oscuro al hacer clic */
+    transform: translateY(0); /* El botón vuelve a su posición original */
+}
+
+/*sigue ciendo parte de carro / Estilos para la tabla */
+.center-content {
     text-align: center;
 }
-
-
-thead tr {
-    background-color: #fbaf32;
-    color: #f27474;
+.product-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 30px;
 }
 
-#tablehead {
+.product-table thead tr {
+    background-color: #c9c6d1;
+    color: #d70b0b;
+}
+
+.table-header {
     padding: 10px;
-}
-
-#btnComprar:hover {
-    background-color: darkviolet;
-}
-
-#btnComprar:active {
-    background-color: rgb(0, 0, 0);
-}
-
-th {
-    padding: 20px 15px;
-    font-size: 700;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 td {
     padding: 15px;
-    border-bottom: solid 1px rgba(5, 5, 3, 0.2);
+    border-bottom: solid 1px rgba(33, 195, 33, 0.2);
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.comprar-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #388E3C;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+
+.comprar-button:hover {
+    background-color: #0a090a;
+}
+
+.remove-button {
+    background-color: #1dca57;
+    color: rgb(235, 235, 238);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border: 2px solid #388E3C;
+}
+
+.remove-button:hover {
+    background-color: #1dca57;
 }
 
 
 
-tbody tr:hover {
-    background: rgba(243, 103, 199, 0.4);
-}
+
+
 
 
 

@@ -1,8 +1,6 @@
-
-
 const agregarAlCarrito = (frutaId)=>{
     if(frutaId > 0){
-        let productoEncontrado = productos.find((producto)=> producto.id === parseInt(frutaId))
+        let productoEncontrado = producto.find((producto)=> producto.id === parseInt(frutaId))
         if(productoEncontrado !== undefined){
             carritoFrutas.push(productoEncontrado)
             almacenarCarrito()
@@ -19,3 +17,5 @@ const recuperarCarrito = () => {
 }
 
 const carritoFrutas = recuperarCarrito()
+
+
